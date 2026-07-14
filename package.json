@@ -2,7 +2,7 @@
   "name": "markdrip",
   "version": "0.1.0",
   "description": "Streaming markdown renderer for terminals, built for token-by-token output. Repairs incomplete markdown mid-stream: unclosed emphasis, half-typed links and open code fences render sensibly on every keystroke, and finished blocks commit as stable lines that are never repainted.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
