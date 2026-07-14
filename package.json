@@ -1,0 +1,55 @@
+{
+  "name": "markdrip",
+  "version": "0.1.0",
+  "description": "Streaming markdown renderer for terminals, built for token-by-token output. Repairs incomplete markdown mid-stream: unclosed emphasis, half-typed links and open code fences render sensibly on every keystroke, and finished blocks commit as stable lines that are never repainted.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "markdrip": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "docs/streaming-model.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "markdown",
+    "terminal",
+    "streaming",
+    "ansi",
+    "llm",
+    "cli",
+    "renderer",
+    "incremental"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/markdrip.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/markdrip#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/markdrip/issues"
+  }
+}
